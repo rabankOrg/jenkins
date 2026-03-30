@@ -123,10 +123,11 @@ spec:
     - name: ui
       port: 8080
       targetPort: 8080
-      nodePort: 31000
+      # nodePort: 31000
     - name: jnlp
       port: 50000
       targetPort: 50000
+  type: LoadBalancer
   selector:
     app: jenkins
 ---
